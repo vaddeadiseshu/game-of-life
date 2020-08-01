@@ -11,6 +11,16 @@ pipeline
             }
            
         }
+        stage("build")
+        {
+            steps
+            {
+                sh label: '', script: '''cd game-of-life
+                mvn package'''
+                
+            }
+            
+        }
     }
     
 }
