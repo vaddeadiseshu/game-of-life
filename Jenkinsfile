@@ -15,7 +15,7 @@ pipeline
         {
             steps
             {
-                sh label: '', script: '''cd game-of-life
+                sh label: '', script: '''cd ~/game-of-life
                 mvn package'''
                 
             }
